@@ -17,6 +17,7 @@ public class Application {
                 principal = scanner.nextFloat();
                 if (principal <= 0) {
                     System.out.println("Số tiền gốc phải là số dương, mời nhập lại: ");
+                    valid = false;
                 } else {
                     valid = true;
                 }
@@ -34,6 +35,7 @@ public class Application {
                 rateByYear = scanner.nextFloat()/100;
                 if (rateByYear <= 0) {
                     System.out.println("Lãi xuất phải là số dương, mời nhập lại: ");
+                    valid = false;
                 } else {
                     valid = true;
                 }
@@ -51,6 +53,7 @@ public class Application {
                 period = scanner.nextInt();
                 if (period <= 0) {
                     System.out.println("kỳ hạn phải là số dương, mời nhập lại: ");
+                    valid = false;
                 } else {
                     valid = true;
                 }
